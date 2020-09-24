@@ -1,9 +1,8 @@
 import React from 'react';
+import AppRounter from "./Router";
 
 function App() {
-  return (
-    <div></div>
-  );
+  return <AppRounter />;
 }
 
 export default App;
