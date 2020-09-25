@@ -1,5 +1,6 @@
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 import * as firebase from "firebase/app";
+import "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -12,5 +13,4 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID
 };
 
-// Firebase App (the core Firebase SDK) is always required and must be listed first
-import * as firebase from "firebase/app";
+export default firebase.initializeApp(firebaseConfig);
